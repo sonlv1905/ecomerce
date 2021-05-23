@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    <definition name="template_user" template="/WEB-INF/views/templates/template_user.jsp">
+        <put-attribute name="content" value="" />
+    </definition>
+ 
+    <definition name="home.index" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/index.jsp" />
+    </definition>
+	<definition name="home.cart" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/cart.jsp" />
+    </definition>
+    <definition name="home.detail" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/productdetails.jsp" />
+    </definition>
+    <definition name="home.register" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/register.jsp" />
+    </definition>
+    <definition name="home.categoryproduct" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/product_category.jsp" />
+    </definition>
+    <definition name="home.order" extends="template_user">
+        <put-attribute name="content" value="/WEB-INF/views/home/order.jsp" />
+    </definition>
+    
+</tiles-definitions>
+                
